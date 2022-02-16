@@ -239,3 +239,23 @@ h4 {
 .first__description li p {
   margin-top: 24px;
 }
+
+/* Second */
+#second {
+  background-color: var(--color-navy);
+  text-align: center;
+}
+#second > .section__container > p {
+  margin-top: 24px;
+}
+.second__images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  margin-top: 20px;
+}
+.second__images li {
+  width: 33%;
+  flex: 0 0 33.3%;
+  padding: 12px;
+}
