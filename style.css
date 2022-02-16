@@ -3,7 +3,8 @@
   /* Color */
   --color-white: #fff;
   --color-silver: #c0c0c0;
-  --color-blue: #016cf9;
+  --color-light-blue: #016cf9;
+  --color-blue: #0063e5;
   --color-navy: #040714;
   --color-black: #000;
 
@@ -19,6 +20,9 @@
   --weight-semi-bold: 600;
   --weight-medium: 500;
   --weight-regular: 400;
+
+  /* Transition */
+  --transition: 300ms;
 }
 
 /* Universal */
@@ -49,4 +53,45 @@ button {
 
 .section__container {
   padding: 5.6vw;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  width: 100%;
+}
+#navbar .section__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5.6vw;
+}
+.navbar__logo img {
+  width: 80px;
+  height: auto;
+}
+.navbar__membership {
+  display: flex;
+}
+.navbar__membership a {
+  font-size: var(--font-regular);
+  padding: 14px 14px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+.membership__signup {
+  background-color: var(--color-blue);
+  border: none;
+  margin-right: 12px;
+}
+.membership__signup:hover {
+  background-color: var(--color-light-blue);
+}
+.membership__login {
+  background-color: var(--color-black);
+  border: 1px solid var(--color-white);
+}
+.membership__login:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
 }
