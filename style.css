@@ -34,7 +34,7 @@
 /* Universal */
 * {
   font-family: "Noto Sans KR", sans-serif;
-  letter-spacing: 0.2px;
+  letter-spacing: 1px;
   box-sizing: border-box;
   color: silver;
 }
@@ -62,30 +62,38 @@ img {
 h1 {
   font-size: var(--heading-large);
   color: var(--color-white);
+  line-height: 54px;
 }
 h2 {
   font-size: var(--heading-medium);
   color: var(--color-white);
+  line-height: 50px;
 }
 h3 {
   font-size: var(--heading-regular);
   color: var(--color-white);
+  line-height: 38px;
 }
 h4 {
   color: var(--color-white);
   font-size: var(--heading-small);
+  line-height: 34px;
 }
 .large {
   font-size: var(--font-large);
+  line-height: 30px;
 }
 .medium {
   font-size: var(--font-medium);
+  line-height: 28px;
 }
 .regular {
   font-size: var(--font-regular);
+  line-height: 26px;
 }
 .small {
   font-size: var(--font-small);
+  line-height: 22px;
 }
 
 /* Navbar */
@@ -107,7 +115,7 @@ h4 {
   display: flex;
 }
 .navbar__membership a {
-  padding: 14px 14px;
+  padding: 10px 15px;
   border-radius: var(--border-radius);
   transition: var(--transition);
 }
@@ -151,7 +159,7 @@ h4 {
 }
 .main__introduce h1 {
   margin-top: 40px;
-  line-height: 54px;
+  letter-spacing: 4px;
 }
 .introduce__subscribe {
   display: flex;
@@ -209,7 +217,25 @@ h4 {
   margin-top: 20px;
 }
 .explain__advantage li p {
-  margin-top: 30px;
-  line-height: 28px;
+  margin-top: 24px;
   font-weight: var(--weight-medium);
+}
+
+/* First */
+#first {
+  background-color: var(--color-navy);
+}
+.first__description {
+  display: flex;
+  align-items: center;
+}
+.first__description li:first-child {
+  padding: 0 2vw;
+}
+.first__description li {
+  width: 50%;
+  flex: 0 0 50%;
+}
+.first__description li p {
+  margin-top: 24px;
 }
