@@ -1,0 +1,52 @@
+@import "reset.css";
+:root {
+  /* Color */
+  --color-white: #fff;
+  --color-silver: #c0c0c0;
+  --color-blue: #016cf9;
+  --color-navy: #040714;
+  --color-black: #000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+}
+
+/* Universal */
+
+* {
+  letter-spacing: 0.2px;
+  box-sizing: border-box;
+  color: silver;
+  background-color: var(--color-navy);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.section__container {
+  padding: 5.6vw;
+}
