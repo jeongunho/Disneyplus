@@ -9,35 +9,42 @@
     <meta name="author" content="Unho">
     <link rel="icon" type="image/png" href="image/favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
     <script defer src="main.js"></script>
   </head>
   <body>
     <nav id="navbar">
       <div class="section__container">
-        <picture class="navbar__logo"><img src="image/logo.svg"></picture>
+        <picture class="navbar__logo"><img src="image/logo.png"></picture>
         <div class="navbar__membership">
-          <a href="#" class="membership__signup">지금 가입</a>
-          <a href="#" class="membership__login">로그인</a>
+          <a href="#" class="membership__signup medium">지금 가입</a>
+          <a href="#" class="membership__login medium">로그인</a>
         </div>
       </div>
     </nav>
     <section id="main">
       <div class="section__container">
-        <picture class="main__logo"><img src="image/logo.svg"></picture>
-        <h1>이 모든 이야기가 여기에 지금 스트리밍 중</h1>
-        <ul class="main__subscribe">
-          <li class="subscribe__month">
-            <h3>월 9,900원</h3>
-            <p>멤버십이 필요합니다</p>
-            <a href="#">지금 구독하기</a>
-          </li>
-          <li class="subscribe__year">
-            <h3>연 99,000원</h3>
-            <p>최대 16% 할인된 가격.* 멤버십이 필요합니다.</p>
-            <a href="#">12개월 구독하고 할인받기</a>
-          </li>
-        </ul>
-        <p class="main__footnote">*월간 멤버십 12개월 구독료 대비 할인된 가격입니다.</p>
+        <div class="main__introduce">
+          <picture class="introduce__logo">
+            <img src="image/logo.png">
+          </picture>
+          <h1>이 모든 이야기가 여기에<br>지금 스트리밍 중</h1>
+          <ul class="introduce__subscribe">
+            <li class="subscribe__month">
+              <h3 class="price">월 9,900원</h3>
+              <p class="membership">멤버십이 필요합니다</p>
+              <a href="#" class="medium">지금 구독하기</a>
+            </li>
+            <li class="subscribe__year">
+              <h3 class="price">연 99,000원</h3>
+              <p class="membership">최대 16% 할인된 가격.* 멤버십이 필요합니다.</p>
+              <a href="#" class="medium">12개월 구독하고 할인받기</a>
+            </li>
+          </ul>
+          <p class="introduce__reference small">*월간 멤버십 12개월 구독료 대비 할인된 가격입니다.</p>
+        </div>
       </div>
     </section>
     <section id="explain">
@@ -194,8 +201,8 @@
     </section>
     <footer id="footer">
       <div class="section__container">
-        <picture><img src="image/logo.svg"></picture>
-        <ul class="footer__informatio">
+        <picture><img src="image/logo.png"></picture>
+        <ul class="footer__information">
           <li>
             <select>
               <option>English</option>
