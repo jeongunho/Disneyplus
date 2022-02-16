@@ -259,3 +259,23 @@ h4 {
   flex: 0 0 33.3%;
   padding: 12px;
 }
+
+/* Third */
+#third {
+  background-color: var(--color-navy);
+  text-align: center;
+}
+#third > .section__container > p {
+  margin-top: 24px;
+}
+.third__images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  margin-top: 20px;
+}
+.third__images li {
+  width: 33%;
+  flex-direction: 0 0 33.3%;
+  padding: 12px;
+}
