@@ -346,3 +346,47 @@ h4 {
 .faq__accordion-child p:first-child {
   margin-top: 0;
 }
+
+/* Footer */
+#footer {
+  background-color: var(--color-navy);
+  text-align: center;
+  font-size: var(--font-small);
+  line-height: 22px;
+}
+#footer > .section__container {
+  padding: 26px 0;
+}
+#footer > .section__container > picture {
+  max-width: 80px;
+  height: auto;
+  display: inline-block;
+}
+.footer__information {
+  max-width: 1024px;
+  margin: 2px auto 16px;
+}
+.footer__information select {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.footer__information select:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer__information select:active {
+  border-color: white;
+}
+.footer__information > a {
+  padding: 8px 12px;
+  display: inline-block;
+  color: var(--color-silver);
+}
+.footer__information > a:hover {
+  color: var(--color-white);
+}
+.footer__footnonte {
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+}
