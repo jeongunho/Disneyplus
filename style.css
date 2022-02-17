@@ -6,6 +6,7 @@
   --color-silver: #c0c0c0;
   --color-light-blue: #016cf9;
   --color-blue: #0063e5;
+  --color-light-navy: #13151d;
   --color-navy: #040714;
   --color-black: #000;
 
@@ -153,6 +154,7 @@ h4 {
 }
 .main__introduce {
   max-width: 640px;
+  width: 50%;
 }
 .introduce__logo {
   display: block;
@@ -305,4 +307,42 @@ h4 {
 }
 .fourth__device li p {
   margin-top: 24px;
+}
+
+/* FAQ */
+#faq {
+  background-color: var(--color-navy);
+}
+#faq > .section__container > h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.faq__accordion-container {
+  background-color: var(--color-light-navy);
+  margin-top: 16px;
+}
+.faq__accordion-btn {
+  padding: 24px;
+  width: 100%;
+}
+.faq__accordion-btn span {
+  font-size: var(--font-large);
+  width: 100%;
+  display: block;
+  text-align: left;
+  color: var(--color-white);
+}
+.faq__accordion-child {
+  padding: 24px;
+  padding-top: 0;
+  display: none;
+}
+.faq__accordion-child p {
+  margin-top: 16px;
+  font-size: var(--font-large);
+  letter-spacing: 0.4px;
+  line-height: 30px;
+}
+.faq__accordion-child p:first-child {
+  margin-top: 0;
 }
