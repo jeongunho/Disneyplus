@@ -121,6 +121,7 @@ h4 {
   padding: 10px 15px;
   border-radius: var(--border-radius);
   transition: var(--transition);
+  opacity: 0.8;
 }
 .membership__signup {
   background-color: var(--color-blue);
@@ -142,6 +143,7 @@ h4 {
 /* Subnavbar */
 #subnavbar a {
   position: fixed;
+  z-index: 10;
   top: 10px;
   right: 40px;
   padding: 10px 15px;
@@ -149,6 +151,7 @@ h4 {
   background-color: var(--color-black);
   border: 1px solid var(--color-white);
   transition: var(--transition);
+  opacity: 0.8;
 }
 #subnavbar a:hover {
   color: var(--color-black);
@@ -159,6 +162,7 @@ h4 {
 #main {
   min-height: 100vh;
   background-color: var(--color-navy);
+  position: relative;
 }
 #main .section__container {
   background: url("image/background.jpeg") center/cover no-repeat;
@@ -178,7 +182,7 @@ h4 {
   max-width: 180px;
 }
 .main__introduce h1 {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 .introduce__subscribe {
   display: flex;
@@ -197,19 +201,60 @@ h4 {
   letter-spacing: 0;
 }
 .introduce__subscribe li .membership {
-  margin-top: 16px;
+  margin-top: 8px;
   font-weight: var(--weight-medium);
 }
 .introduce__subscribe li a {
   background-color: var(--color-blue);
   text-align: center;
   transition: var(--transition);
-  padding: 16px 0;
-  margin-top: 24px;
+  margin-top: 16px;
+  padding: 16px 24px;
   border-radius: var(--border-radius);
+  max-width: 360px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduce__subscribe li a span {
+  color: var(--color-white);
+  line-height: 18px;
 }
 .introduce__subscribe li a:hover {
   background-color: var(--color-light-blue);
+}
+
+/* Down */
+.hint {
+  position: absolute;
+  left: auto;
+  right: 5.6vw;
+  bottom: 2vw;
+  padding: 6px;
+  margin-right: -14px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  animation: ani 1.75s infinite;
+}
+.down {
+  fill: #f9f9f9;
+}
+@keyframes ani {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-7px);
+  }
+  60% {
+    transform: translateY(-3.5px);
+  }
 }
 
 /* Explain */
@@ -232,6 +277,7 @@ h4 {
 }
 .explain__advantage li h4 {
   margin-top: 20px;
+  font-weight: var(--weight-regular);
 }
 .explain__advantage li p {
   margin-top: 24px;
@@ -365,15 +411,16 @@ h4 {
   font-size: 40px;
   position: absolute;
   right: 24px;
-  top: 9.5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Footer */
 #footer {
-  background-color: var(--color-navy);
   text-align: center;
-  font-size: var(--font-small);
+  font-size: 12px;
   line-height: 22px;
+  background-color: var(--color-navy);
 }
 #footer > .section__container {
   padding: 26px 0;
@@ -410,4 +457,317 @@ h4 {
 .footer__footnonte {
   margin-bottom: 20px;
   letter-spacing: 0.75px;
+}
+
+/* Media queries */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --heading-large: 32px;
+    --heading-medium: 28px;
+    --heading-regular: 24px;
+    --heading-small: 22px;
+    --font-large: 16px;
+    --font-medium: 15px;
+    --font-small: 11px;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+  h2 {
+    line-height: 38px;
+  }
+  h3 {
+    line-height: 34px;
+  }
+  h4 {
+    line-height: 32px;
+  }
+  .large {
+    font-size: var(--font-large);
+    line-height: 26px;
+  }
+  .medium {
+    font-size: var(--font-medium);
+    line-height: 25px;
+  }
+  .small {
+    font-size: var(--font-small);
+    line-height: 21px;
+  }
+  .section__container {
+    padding: 10vw 5vw;
+  }
+
+  /* Subnavbar */
+
+  #subnavbar a {
+    font-size: var(--font-large);
+    padding: 12px 18px;
+  }
+
+  /* Main */
+  #main {
+    min-height: auto;
+  }
+  #main .section__container {
+    display: block;
+    min-height: auto;
+  }
+  .main__introduce {
+    width: 100%;
+    max-width: 600px;
+  }
+  .introduce__logo {
+    max-width: 160px;
+  }
+  .introduce__reference {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  /* Explain */
+  .explain__advantage li p {
+    margin-top: 16px;
+  }
+
+  /* First */
+  .first__description li p {
+    margin-top: 16px;
+  }
+
+  /* Second */
+  #second .section__container > p {
+    margin-top: 16px;
+  }
+
+  /* Third */
+  #third > .section__container > p {
+    margin-top: 16px;
+  }
+
+  /* Fourth */
+  #fourth > div > p {
+    margin-top: 16px;
+  }
+  .fourth__device li p {
+    margin-top: 16px;
+  }
+
+  /* FAQ */
+  #faq > .section__container > h2 {
+    margin-bottom: 16px;
+  }
+
+  /* Footer */
+  #footer .section__container {
+    padding: 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --heading-large: 20px;
+    --heading-medium: 26px;
+    --heading-regular: 22px;
+    --heading-small: 16px;
+    --font-large: 16px;
+    --font-medium: 16px;
+    --font-small: 15px;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+  h2 {
+    line-height: 36px;
+  }
+  h3 {
+    line-height: 32px;
+  }
+  h4 {
+    line-height: 26px;
+  }
+  .large {
+    font-size: var(--font-large);
+    line-height: 28px;
+  }
+  .medium {
+    font-size: var(--font-medium);
+    line-height: 26px;
+  }
+  .small {
+    font-size: var(--font-small);
+    line-height: 25px;
+  }
+  .section__container {
+    padding: 10vw 5vw;
+  }
+
+  /* Subnavbar */
+  #subnavbar a {
+    padding: 6px 8px;
+    font-size: var(--font-large);
+    line-height: 25px;
+  }
+
+  /* Main */
+  #main {
+    text-align: center;
+  }
+  #main .section__container {
+    background: url("image/background2.jpeg") center/cover no-repeat;
+    background-position: top;
+    min-height: 70vh;
+    padding: 40vw 5vw 20vw;
+  }
+  .main__introduce {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .introduce__logo {
+    max-width: 130px;
+    margin: 0 auto;
+  }
+  .introduce__subscribe {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .subscribe__month::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-white);
+    opacity: 0.25;
+    margin-top: 12px;
+  }
+  .introduce__subscribe li {
+    padding: 0;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .introduce__subscribe li .price {
+    margin-top: 16px;
+    line-height: 1.2;
+  }
+  .introduce__subscribe li .membership {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .introduce__subscribe li a {
+    margin-top: 8px;
+    padding: 0;
+    height: 50px;
+  }
+  .introduce__subscribe li.subscribe__year h3.price {
+    margin-top: 12px;
+  }
+  .introduce__reference {
+    font-size: 11px;
+    line-height: 21px;
+    margin-top: 12px;
+  }
+
+  /* Down */
+  .hint {
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: 6vw;
+  }
+
+  /* Explain */
+  .explain__advantage {
+    flex-direction: column;
+  }
+  .explain__advantage li {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .explain__advantage li p {
+    margin: 16px 0 20px;
+    font-size: var(--font-small);
+    line-height: 25px;
+  }
+
+  /* First */
+  .first__description {
+    flex-direction: column;
+    text-align: center;
+  }
+  .first__description li {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .first__description li p {
+    margin: 16px 0 20px;
+    font-size: var(--font-small);
+    line-height: 25px;
+  }
+
+  /* Second */
+  #second > .section__container > p {
+    margin: 16px 0 20px;
+    line-height: 26px;
+  }
+  .second__images {
+    justify-content: center;
+  }
+  .second__images li {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  /* Third */
+  #third > .section__container > p {
+    margin: 16px 0 20px;
+    line-height: 26px;
+  }
+  .third__images {
+    margin-top: 0;
+    justify-content: center;
+  }
+  .third__images li {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  /* Fourth */
+  #fourth > div > p {
+    margin: 16px 0 20px;
+    font-size: var(--font-small);
+    line-height: 25px;
+  }
+  .fourth__device {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fourth__device li {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .fourth__device li p {
+    font-size: var(--font-small);
+    line-height: 25px;
+  }
+
+  /* FAQ */
+  #faq > .section__container h2 {
+    margin-bottom: 16px;
+  }
+  .faq__accordion-btn > span {
+    font-size: var(--font-small);
+    line-height: 25px;
+  }
+
+  /* Footer */
+  #footer {
+    font-size: 11px;
+    line-height: 21px;
+  }
+  #footer .section__container {
+    padding: 5vw;
+  }
 }
