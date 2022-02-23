@@ -103,6 +103,8 @@ h4 {
   width: 100%;
   background-color: var(--color-navy);
   opacity: 0;
+  transition: all var(--transition) linear;
+  z-index: 20;
 }
 #navbar .section__container {
   display: flex;
@@ -118,10 +120,8 @@ h4 {
   display: flex;
 }
 .navbar__membership a {
-  padding: 10px 15px;
+  padding: 10px 16px;
   border-radius: var(--border-radius);
-  transition: var(--transition);
-  opacity: 0.8;
 }
 .membership__signup {
   background-color: var(--color-blue);
@@ -146,7 +146,7 @@ h4 {
   z-index: 10;
   top: 10px;
   right: 40px;
-  padding: 10px 15px;
+  padding: 10px 16px;
   border-radius: var(--border-radius);
   background-color: var(--color-black);
   border: 1px solid var(--color-white);
@@ -175,7 +175,7 @@ h4 {
 }
 .main__introduce {
   max-width: 640px;
-  width: 50%;
+  width: 50.5%;
 }
 .introduce__logo {
   display: block;
@@ -202,7 +202,6 @@ h4 {
 }
 .introduce__subscribe li .membership {
   margin-top: 8px;
-  font-weight: var(--weight-medium);
 }
 .introduce__subscribe li a {
   background-color: var(--color-blue);
@@ -382,6 +381,7 @@ h4 {
 }
 .faq__accordion-btn {
   padding: 24px;
+  padding-right: 48px;
   width: 100%;
   text-align: left;
   font-size: var(--font-large);
@@ -495,11 +495,17 @@ h4 {
     padding: 10vw 5vw;
   }
 
+  /* Navbar */
+  #navbar .navbar__membership a {
+    padding: 12px 16px;
+    font-size: 18px;
+  }
+
   /* Subnavbar */
 
   #subnavbar a {
-    font-size: var(--font-large);
-    padding: 12px 18px;
+    font-size: 18px;
+    padding: 12px 16px;
   }
 
   /* Main */
@@ -605,11 +611,23 @@ h4 {
     padding: 10vw 5vw;
   }
 
+  /* Navbar */
+  #navbar .section__container {
+    padding: 13px 18px;
+  }
+  #navbar .navbar__membership a {
+    padding: 6.5px 8px;
+    font-size: var(--font-small);
+    line-height: 25px;
+  }
+
   /* Subnavbar */
   #subnavbar a {
-    padding: 6px 8px;
-    font-size: var(--font-large);
+    padding: 6.5px 8px;
+    font-size: var(--font-small);
     line-height: 25px;
+    top: 15px;
+    right: 18px;
   }
 
   /* Main */

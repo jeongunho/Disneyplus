@@ -20,3 +20,14 @@ accordion.forEach((value, index) => {
     }
   });
 });
+
+// Navbar
+const navbar = document.querySelector('#navbar');
+const subnavbar = document.querySelector('#subnavbar');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > 700) {
+    navbar.style.opacity = 1;
+  } else {
+    navbar.style.opacity = 0;
+  }
+});
