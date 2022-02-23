@@ -26,8 +26,8 @@ const navbar = document.querySelector('#navbar');
 const subnavbar = document.querySelector('#subnavbar');
 document.addEventListener('scroll', () => {
   if (window.scrollY > 700) {
-    navbar.style.opacity = 1;
+    navbar.classList.add('visible');
   } else {
-    navbar.style.opacity = 0;
+    navbar.classList.remove('visible');
   }
 });

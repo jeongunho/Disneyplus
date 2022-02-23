@@ -103,8 +103,13 @@ h4 {
   width: 100%;
   background-color: var(--color-navy);
   opacity: 0;
-  transition: all var(--transition) linear;
+  transition: all var(--transition) ease-in-out;
   z-index: 20;
+  pointer-events: none;
+}
+#navbar.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 #navbar .section__container {
   display: flex;
@@ -126,7 +131,7 @@ h4 {
 .membership__signup {
   background-color: var(--color-blue);
   border: none;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 .membership__signup:hover {
   background-color: var(--color-light-blue);
@@ -150,7 +155,7 @@ h4 {
   border-radius: var(--border-radius);
   background-color: var(--color-black);
   border: 1px solid var(--color-white);
-  transition: var(--transition);
+  transition: all var(--transition) ease-in-out;
   opacity: 0.8;
 }
 #subnavbar a:hover {
@@ -206,7 +211,7 @@ h4 {
 .introduce__subscribe li a {
   background-color: var(--color-blue);
   text-align: center;
-  transition: var(--transition);
+  transition: all var(--transition) ease-in-out;
   margin-top: 16px;
   padding: 16px 24px;
   border-radius: var(--border-radius);
@@ -401,7 +406,7 @@ h4 {
 .faq__accordion-child {
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--transition) ease-in-out;
+  transition: all var(--transition) ease-in-out;
   font-size: var(--font-large);
 }
 .faq__accordion-child p {
