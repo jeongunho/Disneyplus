@@ -343,7 +343,6 @@ h4 {
 }
 .third__images li {
   max-width: 33%;
-  flex-direction: 0 0 33.3%;
   padding: 12px;
 }
 
